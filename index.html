@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="sv"> <!-- Anger att sidan är på svenska-->
+
+<head>
+    <meta charset="UTF-8"> <!-- Stöd för svenska tecken -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Gör sidan responsiv för mobila enheter-->
+    <title>Uppgift 1.2</title> <!-- Sidtitel -->
+    <link rel = "stylesheet" href = "styles.css"> <!-- Länkar till min CSS-fil -->
+    <link rel="icon" type="image/png" href="Assets/favicon.png" sizes = "32x32">
+    <link rel = "icon" type = "image/x-icon" href = "Assets/favicon.ico" sizes="16x16">
+    <meta name = "description" content = "Startsida">
+</head>
+
+<body>
+    <header>
+        <img src = "Assets/logo.svg" alt = "logo" width = "32" height="32">
+        <img src = "Assets/Bilder/header.png" alt = "Headerbild" class = "header-img">
+
+        <nav aria-label = "Huvudmeny">
+            <ul class = "nav">
+                <li><a class = "nav-link" href = "index.html" aria-current = "page">Startsida</a></li>
+                <li><a class = "nav-link" href = "bildserie.html">Bildserie</a></li>
+                <li><a class = "nav-link" href = "om-mig.html">Om mig</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+<main>
+    <section class="intro">
+        <h2>Om Uppgiften</h2>
+            <p>
+                Den här webbplatsen visar min bildserie samt några av mina redigerade bilder.
+                Jag har arbetat med bildbehandling i <strong>Photopea</strong>. Webbplatsen är byggd med <em>HTML5</em> och
+                <em>CSS</em>, och är responsiv för mobil, surfplatta och dator. 
+            </p>
+    </section>
+
+
+    <section class="grid-gallery" aria-label="Bildserie">
+        <h2>Redigerade bilder och original</h2>
+
+        <!-- Exempel 1: Ljusbalans/kontrastkorrigering -->
+        <article class="edit-block flow">
+            <h2>Bild 1 - Ljus & kontrast</h2>
+
+                <div class="compare">
+                    <figure>
+                        <img src="Assets/Bilder/bildserie001.png" alt = "Original, bild 1" class="full-img">
+                        <figcaption>Original</figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src= "Assets/Bilder/bildserie001 - redigerad.png" alt="Redigerad, bild 1" class="full-img">
+                        <figcaption>Redigerad</figcaption>
+                    </figure>
+    
+                    <p>
+                        <strong>Vad jag gjort:</strong> Jag redigerade landskapsbilden för att ge den en filmisk och enhetlig stil som matchar seriens övriga bilder. Genom att tona ned de starka gröna färgerna och styra dem mot en svalare 
+                        tealton skapades en lugnare och mer stylad färgbalans. Jag lade samtidigt in en lätt värme i highlights och använde en mjuk matte-kurva för att dämpa kontrasten och ge bilden en retroinspirerad känsla. Tillsammans gav dessa justeringar en 
+                        harmonisk, cinematic atmosfär som knyter an till de andra två bilderna i serien.
+                    </p>
+                </div>
+        </article>
+
+
+    <!-- Exempel 2: Borttaget objekt -->
+        <article class="edit-block flow">
+
+            <h2>Bild 2 - Borttaget objekt</h2>
+            
+            <div class="compare">
+                <figure>
+                    <img src="Assets/Bilder/bildserie014.png" alt="Original, bild 2" class="full-img">
+                    <figcaption>Original</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="Assets/Bilder/bilserie014-redigerad.png" alt="Redigerad, bild 2" class="full-img">
+                    <figcaption>Redigerad</figcaption>
+                </figure>
+
+                <p>
+                    <strong>Vad jag gjort:</strong> Använder Photopea för att ta bort fingret genom att använda Lasso Tool som markerar
+                    det onönskade objektet. Sedan gå till edit, fill och välja alternativet Content Aware som gör att programmet automatisk fyller området 
+                    med en bakgrund som kan passa dess omgivning. Använder också Healing Brush för finjustering då det blir konstiga märken/streck efter att man
+                    tar bort det oönskade föremålet. Jag redigerade bilden för att ge den en filmisk, teal-orange-inspirerad stil som skapar en sammanhållen känsla med de andra bilderna i serien. För att uppnå detta förstärktes himlens färg mot en mjuk tealton 
+                    samtidigt som teglet dämpades något, vilket gav en mer harmonisk och stylad färgprofil. Jag lät skuggorna lyftas svagt för att skapa en matta, analoga toner och mjukade upp högdagrarna för att undvika en hård digital kontrast. Genom att 
+                    balansera färgtemperaturen mellan kalla skuggor och lite varmare highlights fick bilden en retro, cinematic atmosfär. Resultatet är en mer enhetlig och estetiskt sammanhållen bild med ett lugnare, filmiskt uttryck som matchar stilen i serien.
+                </p>
+            </div>
+        </article>
+
+
+    <!-- Exempel 3: Färgläggning/byte av färg (krav) -->
+        <article class="edit-block flow">
+            <h2>Bild 3 Färgläggning / Bytt färg</h2>
+
+            <div class="compare">
+                <figure>
+                    <img src="Assets/Bilder/bildserie005.png" alt="Original, bild 3" class="full-img">
+                    <figcaption>Original</figcaption>
+                </figure>
+
+                <figure>
+                    <img src="Assets/Bilder/bildserie005-redigerad.png" alt="Redigerad, bild 3" class="full-img">
+                    <figcaption>Redigerad</figcaption>
+                </figure>
+
+            <p>
+                <strong>Vad jag gjort:</strong> Jag har ändrat färgen på ögat för att matcha färgen på vänstra ögat så mycket som möjligt. Jag kontrollerade vad färgen var med hjälp av eyedropper och matchade sedan färg inställningarna på högra ögat genom 
+                att markera med lasso tool och skapa en ny layer. Efter att jag skapat en ny layer justerade jag hue och saturation samt la till glans med verktygen dodge tool och burn tool. Jag redigerade kattbilden med målet att få den att harmonisera med den 
+                filmiska, teal-orange inspirerade stilen som de två andra bilderna i serien har. För att uppnå det arbetade jag först med att tona ned de varmbruna och gula nyanserna i pälsen och bakgrunden, så att färgerna blev mer neutrala och kunde styras mot 
+                samma kallare tonvärld som i de övriga bilderna. Därefter lade jag in en subtil tealton i skuggorna och en mild värme i de ljusa partierna, vilket speglar kontrasten mellan kalla skuggor och varma highlights som definierar serien. Jag justerade även 
+                kontrasten och använde en mjuk matte-kurva för att ge bilden en mer retro, cinematic känsla.
+            </p>
+        </div>
+
+        </article>
+
+    </section>
+</main>
+
+
+<footer class="site-footer">
+    <div class="container">
+        <p>© <span id="year">2025</span> Francisco De Leon</p>
+    </div>
+</footer>
+
+</body>
+</html>

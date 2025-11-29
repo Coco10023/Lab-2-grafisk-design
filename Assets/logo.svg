@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80 80" aria-label="Minimalist green symbol">
+  <!-- Grön cirkel + abstrakt bladform -->
+  <circle cx="40" cy="40" r="28" fill="#2ECC71"></circle>
+  <path d="M30 40 Q40 18 50 40 Q40 62 30 40Z" fill="white" opacity="0.85"></path>
+</svg>

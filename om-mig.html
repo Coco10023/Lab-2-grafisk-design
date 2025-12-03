@@ -20,12 +20,17 @@
              height="32"
              loading = "lazy">
 
-        <img src = "Assets/Bilder/header.png" 
-             alt = "Headerbild" 
-             class = "header-img"
-             loading = "lazy"
-             width = "1600"
-             height = "400">
+        <picture>
+            <source srcset = "Assets/Bilder/header.avif" type = "image/avif">
+            <source srcset = "Assets/Bilder/header.webp" type = "image/webp">
+            <img 
+                src = "Assets/Bilder/header.png" 
+                alt = "Headerbild" 
+                class = "header-img"
+                loading = "lazy"
+                width = "1600"
+                height = "400">
+        </picture>
 
         <nav aria-label = "Huvudmeny">
             <ul class = "nav">
@@ -39,12 +44,17 @@
 <main class="container flow">
     <h1>Hej! Jag heter <span class="highlight">Francisco Mauricio De Leon</span></h1>
         <div class="about">
-            <img class="portrait" 
-                 src="Assets/Bilder/portrait.png" 
-                 alt="Frilagd porträttbild"
-                 loading = "lazy"
-                 width = "1600"
-                 height = "400">
+            <picture>
+                <source srcset = "Assets/Bilder/portrait.avif" type = "image/avif">
+                <source srcset = "Assets/Bilder/portrait.webp" type = "image/webp">
+                <img 
+                    class="portrait" 
+                    src="Assets/Bilder/portrait.png" 
+                    alt="Frilagd porträttbild"
+                    loading = "lazy"
+                    width = "1600"
+                    height = "400">
+            </picture>
 
                 <p>
                     Jag är student med intresse för Webbutveckling.

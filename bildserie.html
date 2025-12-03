@@ -19,12 +19,17 @@
              height="32"
              loading = "lazy">
 
-        <img src = "Assets/Bilder/header.png" 
-             alt = "Headerbild" 
-             class = "header-img"
-             loading = "lazy"
-             width = "1600"
-             height = "400">
+        <picture>
+            <source srcset = "Assets/Bilder/header.avif" type = "image/avif">
+            <source srcset = "Assets/Bilder/header.webp" type = "image/webp">
+            <img 
+                src = "Assets/Bilder/header.png" 
+                alt = "Headerbild" 
+                class = "header-img"
+                loading = "lazy"
+                width = "1600"
+                height = "400">
+        </picture>
 
         <nav aria-label = "Huvudmeny">
             <ul class = "nav">
@@ -55,23 +60,34 @@
             <h2>Bild 1 - Ljus & kontrast</h2>
 
                 <div class="compare">
-                    <figure>
-                        <img src="Assets/Bilder/bildserie001.png" 
-                             alt = "Original, bild 1" 
-                             class="full-img"
-                             loading = "lazy"
-                             width = "1600"
-                             height = "400">
-                        <figcaption>Original</figcaption>
-                    </figure>
 
                     <figure>
-                        <img src= "Assets/Bilder/bildserie001-redigerad.png" 
-                             alt="Redigerad, bild 1" 
-                             class="full-img"
-                             loading = "lazy"
-                             width = "1600"
-                             height = "400">
+                        <picture>
+                            <source srcset = "Assets/Bilder/bildserie001.avif" type = "image/avif">
+                            <source srcset = "Assets/Bilder/bildserie001.webp" type = "image/webp">
+                            <img 
+                                src="Assets/Bilder/bildserie001.png" 
+                                alt = "Original, bild 1" 
+                                class="full-img"
+                                loading = "lazy"
+                                width = "1600"
+                                height = "400">
+                        <figcaption>Original</figcaption>
+                    </figure>
+                        </picture>
+
+                    <figure>
+                        <picture>
+                            <source srcset = "Assets/Bilder/bildserie001-redigerad.avif" type = "image/avif">
+                            <source srcset = "Assets/Bilder/bildserie001-redigerad.webp" type = "image/webp">
+                            <img 
+                                src= "Assets/Bilder/bildserie001-redigerad.png" 
+                                alt="Redigerad, bild 1" 
+                                class="full-img"
+                                loading = "lazy"
+                                width = "1600"
+                                height = "400">
+                        </picture>
                         <figcaption>Redigerad</figcaption>
                     </figure>
     
@@ -90,23 +106,35 @@
             <h2>Bild 2 - Borttaget objekt</h2>
             
             <div class="compare">
-                <figure>
-                    <img src="Assets/Bilder/bildserie014.png" 
-                         alt="Original, bild 2" 
-                         class="full-img"
-                         loading = "lazy"
-                         width = "1600"
-                         height = "400">
-                    <figcaption>Original</figcaption>
-                </figure>
 
                 <figure>
-                    <img src="Assets/Bilder/bildserie014-redigerad.png" 
-                         alt="Redigerad, bild 2" 
-                         class="full-img"
-                         loading = "lazy"
-                         width = "1600"
-                         height = "400">
+                    <picture>
+                        <source srcset = "Assets/Bilder/bildserie014.avif" type ="image/avif">
+                        <source srcset = "Assets/Bilder/bildserie014.webp" type ="image/webp">
+                        <img 
+                            src="Assets/Bilder/bildserie014.png" 
+                            alt="Original, bild 2" 
+                            class="full-img"
+                            loading = "lazy"
+                            width = "1600"
+                            height = "400">
+                    </picture>
+                    <figcaption>Original</figcaption>
+                </figure>
+                    
+
+                <figure>
+                    <picture>
+                        <source srcset = "Assets/Bilder/bildserie014-redigerad" type="image/avif">
+                        <source srcset = "Assets/Bilder/bildserie014-redigerad" type="image/webp">
+                        <img 
+                            src="Assets/Bilder/bildserie014-redigerad.png" 
+                            alt="Redigerad, bild 2" 
+                            class="full-img"
+                            loading = "lazy"
+                            width = "1600"
+                            height = "400">
+                    </picture>
                     <figcaption>Redigerad</figcaption>
                 </figure>
 
@@ -127,23 +155,34 @@
             <h2>Bild 3 Färgläggning / Bytt färg</h2>
 
             <div class="compare">
+
                 <figure>
-                    <img src="Assets/Bilder/bildserie005.png" 
-                         alt="Original, bild 3" 
-                         class="full-img"
-                         loading = "lazy"
-                         width = "1600"
-                         height = "400">
+                    <picture>
+                        <source srcset = "Assets/Bilder/bildserie005.avif" type="image/avif">
+                        <source srcset = "Assets/Bilder/bildserie005.webp" type = "image/webp">
+                        <img 
+                            src="Assets/Bilder/bildserie005.png" 
+                            alt="Original, bild 3" 
+                            class="full-img"
+                            loading = "lazy"
+                            width = "1600"
+                            height = "400">
+                    </picture>
                     <figcaption>Original</figcaption>
                 </figure>
 
                 <figure>
-                    <img src="Assets/Bilder/bildserie005-redigerad.png" 
-                         alt="Redigerad, bild 3" 
-                         class="full-img"
-                         loading = "lazy"
-                         width = "1600"
-                         height = "400">
+                    <picture>
+                        <source srcset = "Assets/Bilder/bildserie005-redigerad.avif" type="image/avif">
+                        <source srcset = "Assets/Bilder/bildserie005-redigerad.webp" type="image/webp">
+                        <img 
+                            src="Assets/Bilder/bildserie005-redigerad.png" 
+                            alt="Redigerad, bild 3" 
+                            class="full-img"
+                            loading = "lazy"
+                            width = "1600"
+                            height = "400">
+                    </picture>
                     <figcaption>Redigerad</figcaption>
                 </figure>
 

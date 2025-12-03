@@ -19,12 +19,17 @@
              height="32"
              loading = "lazy">
 
-        <img src = "Assets/Bilder/header.png" 
-             alt = "Headerbild" 
-             class = "header-img"
-             loading = "lazy"
-             width = "1600"
-             height = "400">
+        <picture>
+            <source srcset = "Assets/Bilder/header.avif" type = "image/avif">
+            <source srcset = "Assets/Bilder/header.webp" type = "image/webp">
+            <img 
+                src = "Assets/Bilder/header.png" 
+                alt = "Headerbild" 
+                class = "header-img"
+                loading = "lazy"
+                width = "1600"
+                height = "400">
+        </picture>
 
         <nav aria-label = "Huvudmeny">
             <ul class = "nav">
@@ -41,32 +46,50 @@
     <div class="grid">
 
         <figure class="card">
-            <img src="Assets/Bilder/bildserie001-redigerad.png" 
-                 alt="Bild 1 i serien" 
-                 class="full-img"
-                 loading = "lazy"
-                 width = "1600"
-                 height = "400">
+            <picture>
+                <source srcset= "Assets/Bilder/bildserie001-redigerad.avif" type = "image/avif">
+                <source srcset = "Assets/Bilder/bildserie001-redigerad.webp" type = "image/webp">
+
+                <img src="Assets/Bilder/bildserie001-redigerad.png" 
+                    alt="Bild 1 i serien" 
+                    class="full-img"
+                    loading = "lazy"
+                    width = "1600"
+                    height = "400">
+            </picture>
+
             <figcaption>Bild 1</figcaption>
         </figure>
 
         <figure class="card">
-            <img src="Assets/Bilder/bildserie005-redigerad.png" 
-                 alt="Bild 2 i serien" 
-                 class="full-img"
-                 loading = "lazy"
-                 width = "1600"
-                 height = "400">
+            <picture>
+                <source srcset = "Assets/Bilder/bildserie005-redigerad.avif" type="image/avif">
+                <source srcset = "Assets/Bilder/bildserie005-redigerad.webp" type="image/webp">
+                <img 
+                    src="Assets/Bilder/bildserie005-redigerad.png" 
+                    alt="Bild 2 i serien" 
+                    class="full-img"
+                    loading = "lazy"
+                    width = "1600"
+                    height = "400">
+            </picture>
             <figcaption>Bild 2</figcaption>
         </figure>
 
         <figure class="card">
-            <img src="Assets/Bilder/bildserie014-redigerad.png" 
+            <picture>
+                <source srcset = "Assets/Bilder/bildserie014-redigerad.avif" type = "image/avif">
+                <source srcset = "Assets/Bilder/bildserie014-redigerad.webp" type = "image/webp">
+
+            <img 
+                 src="Assets/Bilder/bildserie014-redigerad.png" 
                  alt= "Bild 3 i serien" 
                  class="full-img"
                  loading = "lazy"
                  width = "1600"
                  height = "400">
+            </picture>
+
             <figcaption>Bild 3</figcaption>
         </figure>
 
